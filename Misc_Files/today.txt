@@ -1,0 +1,30 @@
+One key table
+	name	waist size
+
+Two key Table
+	Primary Key		Secondary Keys
+
+	Name			Age		Height		Weight		Shoe Size		Sex
+	
+	Bob				23		175			135			10				M
+	Carl			
+	Max									150
+	Zebra			
+
+	Search by name and attribute
+
+	**radix**use a null for bin[][]
+
+	Name1	Table1
+	Name2	Table2
+	Name3	Table3
+
+	Age		23
+	Height	135
+	Wt		170	
+	Shoe	10
+
+	void store(char targetname[20], int value)
+	
+	void store (char key1[20], char key2[20], int value)
+	
