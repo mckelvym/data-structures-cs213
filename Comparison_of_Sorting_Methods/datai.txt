@@ -1,0 +1,78 @@
+Insertion Sort: 
+
+The list (before sorting) is as follows: 
+
+list[0] = 43
+list[1] = 40
+list[2] = 18
+list[3] = 24
+list[4] = 39
+list[5] = 60
+list[6] = 12
+
+
+Pass 1 looks like this:
+
+list[0] = 40
+list[1] = 43
+list[2] = 18
+list[3] = 24
+list[4] = 39
+list[5] = 60
+list[6] = 12
+
+
+Pass 2 looks like this:
+
+list[0] = 18
+list[1] = 40
+list[2] = 43
+list[3] = 24
+list[4] = 39
+list[5] = 60
+list[6] = 12
+
+
+Pass 3 looks like this:
+
+list[0] = 18
+list[1] = 24
+list[2] = 40
+list[3] = 43
+list[4] = 39
+list[5] = 60
+list[6] = 12
+
+
+Pass 4 looks like this:
+
+list[0] = 18
+list[1] = 24
+list[2] = 39
+list[3] = 40
+list[4] = 43
+list[5] = 60
+list[6] = 12
+
+
+Pass 5 looks like this:
+
+list[0] = 18
+list[1] = 24
+list[2] = 39
+list[3] = 40
+list[4] = 43
+list[5] = 60
+list[6] = 12
+
+
+Pass 6 looks like this:
+
+list[0] = 12
+list[1] = 18
+list[2] = 24
+list[3] = 39
+list[4] = 40
+list[5] = 43
+list[6] = 60
+
