@@ -1,0 +1,45 @@
+mark mckelvy
+data structures 3:00 mwf
+april 28, 2003
+p348 #'s 1, 2, 5
+
+1.	a. full search tree
+	b. not full search tree
+	c. not full search tree
+
+2.	a.	6 3 2 1 5 4 9 10 7 8
+	b.	6 5 4 3 2 1 7 8  9 10
+	c.	3 1 2 4 5 6 7 8  9 10
+
+5.	a.
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	b.
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+	c.

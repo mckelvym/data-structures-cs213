@@ -1,0 +1,20 @@
+mark mckelvy
+data structures 3:00 mwf
+april 30, 2003
+p378 1-4
+
+1.		Seattle, Chicago, Miami, New Orleans, Dallas, New York,
+		Washington, Milwaukee, Phoenix, San Francisco, Los Angeles,
+		Minneapolis, Oklahoma City, Las Vegas.
+
+2.		Miami, Chicago, New Orleans, Dallas, New York, Washington,
+		Milwaukee, Phoenix, San Francicso, Seattle, Los Angeles,
+		Minneapolis, Oklahoma City, Las Vegas
+
+3.		Seattle, Chicago, Los Angeles, Miami, New Orleans,
+		Las Vegas, Phoenix, San Francicso, Dallas, Milwaukee,
+		New York, Minneapolis, Washington, Oklahoma City
+
+4.		Miami, Chicago, New Orleans, Las Vegas, Seattle, Dallas,
+		Los Angeles, New York, Minneapolis, Phoenix, San Francisco,
+		Washington,	Milwaukee, Oklahoma City
