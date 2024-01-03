@@ -5,7 +5,7 @@ HW: fibonacci sequence program
 	p273, questions 4 & 5
 
 // fibonacci program
-#include <iostream.h>
+#include <iostream>
 #include <stdlib.h>
 
 int a = 0;
@@ -34,7 +34,7 @@ int next(int a, int b)
 		exit(0);
 	counter++;
 	b = next(b, a+b);
-	
+
 	return a;
 }
 
@@ -45,20 +45,20 @@ P 273 Questions 4 & 5
    and it calls itself.
 
 5. a.	Achieve intent? Yes
-		
-		Why? Since the 'ch' is locally declared, upon each recursion, a 'new' 
+
+		Why? Since the 'ch' is locally declared, upon each recursion, a 'new'
 			 char is created and saved in the compliler stack. When the recursion
 			 finishes, each character is correctly placed on the stack and then
 			 the output is correct.
-		
+
 		Output of 'MADAM': MADAM
-	
+
    b.	Achieve intent? No
-	
+
 		Why? Since the 'ch' is globally declared, upon each recursion, the char
 			 read is replaced and lost. The last character is the one that gets
-			 saved in the compiler stack. When the recursion is finished, the 
+			 saved in the compiler stack. When the recursion is finished, the
 			 last character gets pushed five times and therefore the output
 			 is incorrect.
-		
+
 		Output of 'MADAM': MMMMM

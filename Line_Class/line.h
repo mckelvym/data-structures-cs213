@@ -1,7 +1,7 @@
 #ifndef _LINE_H
 #define _LINE_H
 
-#include <iostream.h>
+#include <iostream>
 #include <stdlib.h>
 
 struct point
@@ -44,7 +44,7 @@ void line::find_slope()
 void line::getline()
 {
 	float x1, x2, y1, y2;
-	
+
 	cout << endl;
 	cout << "Enter x for point 1: ";
 	cin >> x1;
@@ -55,7 +55,7 @@ void line::getline()
 	cin >> x2;
 	cout << "Enter y for point 2: ";
 	cin >> y2;
-	
+
 	p1.x = x1;
 	p1.y = y1;
 	p2.x = x2;
@@ -80,7 +80,7 @@ int line::parallel_perpendicular(line l1, line l2)
 	{
 		return Parallel;
 	}
-	else if ((l1.slope) == (-1 * (l2.X / l2.Y))) 
+	else if ((l1.slope) == (-1 * (l2.X / l2.Y)))
 	{
 		return Perpendicular;
 	}

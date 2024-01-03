@@ -3,7 +3,7 @@
 // 1/19/03
 // Line Class & Program
 
-#include <iostream.h>
+#include <iostream>
 #include <stdlib.h>
 #include "line.h"
 
@@ -27,7 +27,7 @@ int main()
 	x2 = l2.displayX();
 	y1 = l1.displayY();
 	y2 = l2.displayY();
-	
+
 	switch (slope)
 	{
 	case 1:

@@ -5,7 +5,7 @@
 
 #include <conio.h>
 #include <iomanip.h>
-#include <iostream.h>
+#include <iostream>
 #include <stdlib.h>
 
 // ***** Begin Queue Class *****
@@ -21,9 +21,9 @@ struct node
 class QueueADT
 {
 	public:
-		QueueADT();	
+		QueueADT();
 		~QueueADT();
-		bool is_empty(); 
+		bool is_empty();
 		int at_front();
 		int at_rear();
 		int dequeue();
@@ -96,10 +96,10 @@ void QueueADT::enqueue(int item)
 int QueueADT::dequeue()
 {
 	if (length > 0)
-	{	
+	{
 		int some_data;
 		node *temp = new node;
-	
+
 		temp = front;
 		front = front->next;
 		some_data = temp->data;
@@ -107,7 +107,7 @@ int QueueADT::dequeue()
 		length--;
 		return some_data;
 	}
-	else 
+	else
 	{
 		return -1;
 	}
@@ -127,7 +127,7 @@ int QueueADT::at_rear()
 {
 	if (rear != NULL)
 		return rear->data;
-	else 
+	else
 		return -1;
 }
 
@@ -148,7 +148,7 @@ int QueueADT::get_job(int number)
 		}
 		if (node_number > length)
 			return -1;
-		else 
+		else
 		{
 			data = current->data;
 			return data;
@@ -163,13 +163,13 @@ int QueueADT::get_job(int number)
 
 QueueADT q;						// dynamic variable to hold job queue
 
-double random();				
-void get_data(float &probability, int &total_minutes, int &work_time);								
-void welcome();					
+double random();
+void get_data(float &probability, int &total_minutes, int &work_time);
+void welcome();
 
 int main()
 {
-	bool beenused = false;	
+	bool beenused = false;
 	bool display = false;		// variable that determines if a job is being processed
 	float probability;			// variable that holds probability of job entering queue
 	int counter;				// variable that shows which jobs are in the queue
@@ -184,12 +184,12 @@ int main()
 	int total_minutes;			// variable for total minutes of time to work (iterate)
 	int total_time_on_jobs = 0;	// variable that holds total amount of time actually spent working
 	int work_time;				// variable that holds amount of time to spend of each job
-	
+
 	welcome();
 	get_data(probability = -1.0f, total_minutes = -1, work_time = -1);
-	
+
 	for (current_time = 1; current_time <= total_minutes; current_time++)
-	{	
+	{
 		system("CLS");
 		cout.setf(ios::left);
 		cout << setw(10) << "Minute" << setw(20) << "Job Enqueued" << setw(25) << "Job being Processed" << "Jobs Waiting/Wait Time" << endl << endl;
@@ -237,7 +237,7 @@ int main()
 			{
 				if (beenused == false)
 					cout << endl;
-				cout << setw(65) << "" << "Job " << counter << " - " 
+				cout << setw(65) << "" << "Job " << counter << " - "
 					 << current_time - q.get_job(display_job) << endl;
 				beenused = true;
 				counter++;
@@ -252,9 +252,9 @@ int main()
 
 	system("CLS");
 	cout << "Total Jobs Completed:  " << jobs_completed << endl;
-	cout << "Average Wait Time:     " << float(total_time_on_jobs / jobs_completed) 
+	cout << "Average Wait Time:     " << float(total_time_on_jobs / jobs_completed)
 		 << " minutes." << endl;
-	
+
 	return 0;
 }
 
@@ -287,7 +287,7 @@ void get_data(float &probability, int &total_minutes, int &work_time)
 		cout << endl << "Enter the probability for a job to enter queue (as decimal). ";
 		cin >> probability;
 	}while ((probability > 1.0f) || (probability <= 0.0f));
-	
+
 	// get a valid total time to work
 	do
 	{
@@ -312,7 +312,7 @@ void get_data(float &probability, int &total_minutes, int &work_time)
 		cout << endl << "Enter total minutes to work (least = 100). ";
 		cin >> total_minutes;
 	}while ((total_minutes < 100) || (total_minutes > 3600));
-	
+
 	// get a valid amount of time to work on each job
 	do
 	{
@@ -350,4 +350,3 @@ void welcome()
 	cout << "\n\nPress any key." << endl;
 	getch();
 }
-

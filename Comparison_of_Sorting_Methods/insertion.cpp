@@ -1,4 +1,4 @@
-#include <iostream.h>
+#include <iostream>
 #include <fstream.h>
 
 int main()
@@ -13,7 +13,7 @@ int main()
 	list[4] = 39;
 	list[5] = 60;
 	list[6] = 12;
-	
+
 	fout.open("data.txt", ios::out);
 
 	cout << "Insertion Sort: " << endl << endl;
@@ -56,7 +56,7 @@ int main()
 		// upon leaving loop, j + 1 is the index
 		// where item_to_insert belongs
 		list[j + 1] = item_to_insert;
-		
+
 		cout << endl << endl << "Pass " << k << " looks like this:" << endl << endl;
 		fout << endl << endl << "Pass " << k << " looks like this:" << endl << endl;
 		for (i = 0; i < n; i++)
@@ -65,13 +65,13 @@ int main()
 			fout << "list[" << i << "] = " << list[i] << endl;
 		}
 	}
-		
-		
-		
-		
-		
-		
-	
+
+
+
+
+
+
+
 	cout << endl;
 	fout << endl;
 	fout.close();

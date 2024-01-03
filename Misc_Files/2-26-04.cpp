@@ -1,4 +1,4 @@
-#include<iostream.h>
+#include<iostream>
 struct node{
 	char name[20];
 	int age;
@@ -44,7 +44,7 @@ while(!(strcmp(current->name,temp->name)<0 && strcmp(temp->name,current->next->n
 	current=current->next;
 
 //delete:
-	
+
 	while(
 
 /*int *a;//static allocation- memory add cannot be moved
@@ -64,4 +64,3 @@ c=a;
 cout<<"value of c:"<<*c;
 return 0;*/
 }
-

@@ -3,7 +3,7 @@
 // December 15, 2002
 // Final Program: Binary Tree
 
-#include <iostream.h>
+#include <iostream>
 #include <fstream.h>
 #include <stdlib.h>
 #include "oostring.h"
@@ -36,8 +36,8 @@ int main()
 	char choice;				// variable for user choice
 
 	// Welcome and instructions
-	cout << endl << endl 
-		 << "Welcome to THE sound troubleshooter v1.0!" 
+	cout << endl << endl
+		 << "Welcome to THE sound troubleshooter v1.0!"
 		 << endl << endl
 		 << "Press '1' to continue.     ";
 	cin >> choice;
@@ -49,11 +49,11 @@ int main()
 			 << "So why do you have a computer in the first place?"
 			 << endl << endl;
 		exit(0);
-	}		
+	}
 	cout << endl << endl
-		 << "For your choice:" 
-	 	 << endl << "     '1' indicates 'Yes'" 
-		 << endl << "     '0' indicates 'No'" 
+		 << "For your choice:"
+	 	 << endl << "     '1' indicates 'Yes'"
+		 << endl << "     '0' indicates 'No'"
 		 << endl << endl;
 
 	// Start reading the data from a file
@@ -68,7 +68,7 @@ int main()
 
 	// Set the temporary pointer to the root position
 	temp = root;
-	
+
 	// Present the question to the user and traverse the list until at NULL
 	do
 	{
@@ -85,7 +85,7 @@ int main()
 			}
 		if ((choice != '1') && (choice != '0'))
 			{
-				cout << endl 
+				cout << endl
 					 << " Can't follow directions can you?"
 					 << endl
 					 << " I'll be nice and let you try again..."
@@ -98,8 +98,8 @@ int main()
 	if ((temp->left == NULL) && (temp->right == NULL))
 		{
 			cout << temp->question;
-			cout << endl << endl 
-				 << "Thankyou for using the sound troubleshooter v1.0!" 
+			cout << endl << endl
+				 << "Thankyou for using the sound troubleshooter v1.0!"
 				 << endl << endl;
 			exit(0);
 		}

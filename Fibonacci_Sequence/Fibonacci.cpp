@@ -1,4 +1,4 @@
-#include <iostream.h>
+#include <iostream>
 #include <stdlib.h>
 
 int a = 0;
@@ -27,7 +27,6 @@ int next(int a, int b)
 		exit(0);
 	counter++;
 	b = next(b, a+b);
-	
+
 	return a;
 }
-

@@ -1,4 +1,4 @@
-#include <iostream.h>
+#include <iostream>
 #include <fstream.h>
 
 int main()
@@ -13,7 +13,7 @@ int main()
 	list[4] = 39;
 	list[5] = 60;
 	list[6] = 12;
-	
+
 	fout.open("data.txt", ios::out);
 
 	cout << "The list (before sorting) is as follows: " << endl << endl;
@@ -59,7 +59,7 @@ int main()
 			cout << "list[" << i << "] = " << list[i] << endl;
 			fout << "list[" << i << "] = " << list[i] << endl;
 		}
-		
+
 	}
 
 	cout << endl;

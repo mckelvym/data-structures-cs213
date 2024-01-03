@@ -3,19 +3,19 @@
 // 1/16/03
 // Triangle Class
 
-#include <iostream.h>
+#include <iostream>
 #include <stdlib.h>
 #include <math.h>
 
 class triangle
 {
   public:
-    triangle();        
-    
+    triangle();
+
 	float bharea(float sidea, float height);
 	float karea(float sidea, float sideb, float sidec);
     float perimeter(float sidea, float sideb, float sidec);
-	
+
   private:
     float sidea,sideb,sidec,height;
 };
@@ -70,7 +70,7 @@ int main()
 			cin >> sideb;
 			cout << endl << "What is the length of side c? ";
 			cin >> sidec;
-			
+
 			peri = t1.perimeter(sidea, sideb, sidec);
 			system("CLS");
 			cout << endl << "The perimeter is: " << peri << endl;
@@ -117,7 +117,7 @@ int main()
 					cout << "The area is: " << bharea << endl << endl;
 				}
 			}
-	
+
 		}
 	}
 	while (ans != 3);

@@ -4,7 +4,7 @@
 // binary tree project (incomplete)
 
 #include <conio.h>
-#include <iostream.h>
+#include <iostream>
 #include <stdlib.h>
 
 struct node
@@ -78,7 +78,7 @@ int main()
 	}
 	else
 		cout << endl << "Bad choice" << endl;
-		
+
 	return 0;
 }
 
@@ -109,7 +109,7 @@ void parsestring()
 				{
 					temp->right = newnode(mathstring[currentchar + 1]);
 					currentchar++;
-				}				
+				}
 				break;
 			case '-':
 				temp = newnode(mathstring[currentchar]);
@@ -190,7 +190,7 @@ void maketree()
 void display()
 {
 	char choice;
-	
+
 	do
 	{
 		system("CLS");
@@ -216,7 +216,7 @@ void display()
 				break;
 			case '3':
 				system("CLS");
-				cout << "Postfix (Postorder Transversal)" << endl << endl;				
+				cout << "Postfix (Postorder Transversal)" << endl << endl;
 				display_postfix(root);
 				cout << endl;
 				break;
@@ -232,7 +232,7 @@ void display()
 		getch();
 	}while (choice != '4');
 }
-	
+
 void display_infix(node *tree)
 {
 	if (tree != NULL)
@@ -264,7 +264,7 @@ void display_postfix(node *tree)
 }
 
 void destroy_tree(node *tree)
-{	
+{
 	if (tree != NULL)
 	{
 		destroy_tree(tree->left);

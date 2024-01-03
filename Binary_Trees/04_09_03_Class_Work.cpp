@@ -1,7 +1,7 @@
 // section 7.1 p322
 // 1, 4, 5, 6, 9
 
-#include <iostream.h>
+#include <iostream>
 
 struct node
 {

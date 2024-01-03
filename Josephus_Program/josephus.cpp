@@ -3,7 +3,7 @@
 // 3/31/03
 // josephus program
 
-#include <iostream.h>
+#include <iostream>
 
 struct node
 {
@@ -37,7 +37,7 @@ int main()
 	}
 	cout << endl << "What is the number to skip? ";
 	cin >> number_to_skip;
-	
+
 	current = start;
 	while (current != NULL)
 	{

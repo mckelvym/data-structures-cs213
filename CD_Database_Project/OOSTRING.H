@@ -1,7 +1,7 @@
 #ifndef _OOSTRING_H
 #define _OOSTRING_H
 
-#include <iostream.h>
+#include <iostream>
 // uncomment line below if bool not built-in type
 //#include "bool.h"
 #include <stdlib.h>
@@ -74,4 +74,3 @@ oostring operator + ( char ch, const oostring & str );
 oostring operator + ( const oostring & str, char ch );
 
 #endif
-

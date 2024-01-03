@@ -1,4 +1,4 @@
-#include<iostream.h>
+#include<iostream>
 struct node{
 	char name[20];
 	int age;
@@ -18,7 +18,7 @@ cin>>head->name; //or cin.get(head->name,20);
 cin>>head->age;
 head->next=NULL;
 do{
-	
+
  //adding nodes- get info from user
 	//add nodes to end of list
 
@@ -51,4 +51,3 @@ c=a;
 cout<<"value of c:"<<*c;
 return 0;*/
 }
-

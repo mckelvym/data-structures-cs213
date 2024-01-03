@@ -3,7 +3,7 @@
 // 2/14/03
 //
 
-#include <iostream.h>
+#include <iostream>
 
 int main()
 {

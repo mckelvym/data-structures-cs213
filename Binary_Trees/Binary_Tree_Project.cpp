@@ -1,4 +1,4 @@
-#include <iostream.h>
+#include <iostream>
 
 struct node
 {
@@ -31,7 +31,7 @@ int main()
 		else
 			counter++;
 	}
-	
+
 	parsestring(mathstring[80]);
 
 	return 0;

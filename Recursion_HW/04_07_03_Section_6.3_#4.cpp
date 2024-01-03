@@ -1,4 +1,4 @@
-#include <iostream.h>
+#include <iostream>
 
 void y(int a, int b, int c);
 

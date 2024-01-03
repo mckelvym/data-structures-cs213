@@ -3,7 +3,7 @@
 // march 27, 2003
 // section 5.3 homework p239: 1, 2 and remaining functions/test driver
 
-#include <iostream.h>
+#include <iostream>
 #include "queue.h"
 
 int main()
@@ -28,7 +28,7 @@ int main()
 	cout << get << endl;
 	get = q.dequeue();
 	cout << get << endl;
-	
+
 	return 0;
 }
 
@@ -61,5 +61,3 @@ int main()
 
 		return (float(total / counter));
 	}
-
-

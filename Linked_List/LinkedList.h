@@ -1,7 +1,7 @@
 #ifndef _LINKEDLIST_H
 #define _LINKEDLIST_H
 
-#include <iostream.h>
+#include <iostream>
 #include <string.h>
 
 struct node
@@ -25,7 +25,7 @@ class linkedlist
 		void first();
 		bool retrieve();
 		void insert(char name[30], char data[30]);
-		bool remove();  
+		bool remove();
 		node & operator = (node & name);
 		bool find(char target[30]);
 	private:
@@ -141,7 +141,7 @@ void linkedlist::insert(char name[30], char data[30])
 		head = temp;
 		head->next = current;
 		current->previous = head;
-		current = temp;		
+		current = temp;
 	}
 	else if (current != head)
 	{

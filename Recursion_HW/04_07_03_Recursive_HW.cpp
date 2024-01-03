@@ -1,7 +1,7 @@
-#include <iostream.h>
+#include <iostream>
 #include <conio.h>
 
-int binary_search(int list, int n, int target); 
+int binary_search(int list, int n, int target);
 int binary_search_aux(int list, int low, int high, int target);
 
 int main()

@@ -4,7 +4,7 @@
 // hospital database project
 
 #include <fstream.h>
-#include <iostream.h>
+#include <iostream>
 #include <stdlib.h>
 #include "linkedlist.h"
 
@@ -20,13 +20,13 @@ int main()
 	int menuchoice;
 
 	input();
-	welcome();	
+	welcome();
 	while (true)
 	{
 		menuchoice = menu();
 		choose_operation(menuchoice);
 	}
-	
+
 	return 0;
 }
 

@@ -7,7 +7,7 @@
 #include <conio.h>
 #include <fstream.h>
 #include <iomanip.h>
-#include <iostream.h>
+#include <iostream>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
@@ -42,7 +42,7 @@ int main()
 	int iterations = 0;
 	int speed = 0;
 	int wait = -1;
-				
+
 	initial_matrix(a, b);
 	get_sequence(a);
 	get_iterations(iterations);
@@ -94,7 +94,7 @@ void initial_matrix(int &a, int &b)
 		fout << endl;
 	}
 	fout.close();
-	
+
 	return;
 }
 
@@ -105,7 +105,7 @@ void random_matrix(const int &a, int &counter)
 
 	srand(a);
 	for (counter = 0; counter < (size * 3); counter++)
-	{	
+	{
 		matrix[position.bounds(0, (size - 1))][position.bounds(0, (size - 1))] = 1;
 	}
 
@@ -122,7 +122,7 @@ void reset_new_matrix(int &a, int &b)
 			new_matrix[a][b] = 0;
 		}
 	}
-	
+
 	return;
 }
 
@@ -165,7 +165,7 @@ void get_sequence(int &a)
 		cout << "Positive Integer for Sequence:     ";
 		cin >> a;
 	}while (a >= RAND_MAX);
-	
+
 	return;
 }
 
@@ -233,7 +233,7 @@ void next_generation(int &a, int &b, int &current_iteration, int &iterations)
 					livecells++;
 			}
 			// checks outer cells
-			else 
+			else
 				//if ((a == min) || (a == max) || (b == min) || (b == max))
 			{
 				if ((a == min) && ((b != min) && (b != max)))
@@ -295,7 +295,7 @@ void next_generation(int &a, int &b, int &current_iteration, int &iterations)
 					if (matrix[a][b + 1] == 1)
 						livecells++;
 					if (matrix[a + 1][b + 1] == 1)
-						livecells++;	
+						livecells++;
 				}
 				if ((a == min) && (b == max))
 				{
@@ -304,7 +304,7 @@ void next_generation(int &a, int &b, int &current_iteration, int &iterations)
 					if (matrix[a + 1][b] == 1)
 						livecells++;
 					if (matrix[a + 1][b - 1] == 1)
-						livecells++;	
+						livecells++;
 				}
 				if ((a == max) && (b == min))
 				{
@@ -313,7 +313,7 @@ void next_generation(int &a, int &b, int &current_iteration, int &iterations)
 					if (matrix[a][b + 1] == 1)
 						livecells++;
 					if (matrix[a - 1][b + 1] == 1)
-						livecells++;	
+						livecells++;
 				}
 				if ((a == max) && (b == max))
 				{
@@ -322,7 +322,7 @@ void next_generation(int &a, int &b, int &current_iteration, int &iterations)
 					if (matrix[a][b - 1] == 1)
 						livecells++;
 					if (matrix[a - 1][b - 1] == 1)
-						livecells++;	
+						livecells++;
 				}
 			}
 			// Determine if cell is born, stays alive, or dies
@@ -357,7 +357,7 @@ void next_generation(int &a, int &b, int &current_iteration, int &iterations)
 				same = false;
 		}
 	}
-	if ((livecells == 0) || (same)) 
+	if ((livecells == 0) || (same))
 		current_iteration = (iterations - 1);
 	return;
 }
@@ -403,7 +403,7 @@ void input_matrix(int &a, int &b)
 void output_matrix(int &a, int &b)
 {
 	ofstream fout;
-	
+
 	fout.open("MATRIX.TXT", ios::out);
 	for (a = 0; a < size; a++)
 	{
@@ -422,7 +422,7 @@ void output_matrix(int &a, int &b)
 void output_new_matrix(int &a, int &b)
 {
 	ofstream fout;
-	
+
 	fout.open("MATRIX.TXT", ios::out);
 	for (a = 0; a < size; a++)
 	{
