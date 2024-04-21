@@ -7,6 +7,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+using namespace std;
+
 class triangle
 {
   public:
